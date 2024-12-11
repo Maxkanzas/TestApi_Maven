@@ -2,21 +2,14 @@ package models;
 
 import java.util.List;
 
-public class UsersResponse {
+public class ResourceResponse {
     private int page;
     private int per_page;
     private int total;
     private int total_pages;
-    private List<UserData> data;
+    private List<ResourceData> data;
     private Support support;
 
-    public int getPer_page() {
-        return per_page;
-    }
-
-    public void setPer_page(int per_page) {
-        this.per_page = per_page;
-    }
 
     public int getPage() {
         return page;
@@ -24,6 +17,14 @@ public class UsersResponse {
 
     public void setPage(int page) {
         this.page = page;
+    }
+
+    public int getPer_page() {
+        return per_page;
+    }
+
+    public void setPer_page(int per_page) {
+        this.per_page = per_page;
     }
 
     public int getTotal() {
@@ -42,11 +43,11 @@ public class UsersResponse {
         this.total_pages = total_pages;
     }
 
-    public List<UserData> getData() {
+    public List<ResourceData> getData() {
         return data;
     }
 
-    public void setData(List<UserData> data) {
+    public void setData(List<ResourceData> data) {
         this.data = data;
     }
 
@@ -57,5 +58,6 @@ public class UsersResponse {
     public void setSupport(Support support) {
         this.support = support;
     }
-
 }
+
+
